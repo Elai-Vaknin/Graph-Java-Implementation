@@ -11,7 +11,7 @@ Location: the location of the node in 3D.
 
 # EdgeData
 Represents a edge in the graph.
-#Src#: source node.
+Src: source node.
 Dest: destination node.
 Tag: contains an integer, helps with graph algorithms.
 Info: a string associated with the edge, helps with graph algorithms.

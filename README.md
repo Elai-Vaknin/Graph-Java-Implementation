@@ -1,4 +1,4 @@
-## Overview
+# Overview
 This project represents the structure of a directed weighted graph, also contains a pokemon game.
 
 # NodeData
@@ -25,3 +25,25 @@ Edges: an HashMap contains all the edges of the graph.
 # DWGraph_Algo
 The class that contains the whole algorithms that can be used on a graph.
 G: the graph that the algorithms being used on.
+
+## Methods:
+copy(): a deep copy of the graph return a new directed_weighted_graph object.
+isConnected(): returns a boolean, if the graph is connected or not.
+shortestPath(src, dest): return the shortest path from source node to destination.
+shortestPathDist(src, dest): return the weight of the shortest path from source to destination.
+calculateDist(src): calculates the distance from source node to any other node in the graph, helps to implement shortest path methods.
+save(path): save a graph to json string file.
+load(path): loads a graph from json to DWGraph_DS object.
+convertJson(path, operation): the method that implements save and load, decided by the operation type.
+
+# GeoLocation
+Represents a location in 3D.
+X: x value.
+Y: y value.
+Z: z value.
+
+## Methods:
+distance(point): calculates the distance between the instance to the point.
+
+# InterfaceSerializer
+A class the helps transfering json string into a graph, by deserializing the interfaces into specific classes.

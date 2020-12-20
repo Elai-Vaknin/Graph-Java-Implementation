@@ -4,12 +4,12 @@ This project represents the structure of a directed weighted graph, also contain
 
 # NodeData
 
-Represents a vertice in the graph.
-Key: specific key associated with this node.
-Tag: contains an integer, helps with graph algorithms.
-Weight: the weight of the node.
-Info: a string associated with the node, helps with graph algorithms.
-Location: the location of the node in 3D.
+Represents a vertice in the graph.<br/>
+Key: specific key associated with this node.<br/>
+Tag: contains an integer, helps with graph algorithms.<br/>
+Weight: the weight of the node.<br/>
+Info: a string associated with the node, helps with graph algorithms.<br/>
+Location: the location of the node in 3D.<br/>
 
 # EdgeData
 

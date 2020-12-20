@@ -5,6 +5,7 @@ This project represents the structure of a directed weighted graph, also contain
 # NodeData
 
 Represents a vertice in the graph.<br/>
+
 <b>Key</b>: specific key associated with this node.<br/>
 <b>Tag:</b> contains an integer, helps with graph algorithms.<br/>
 <b>Weight:</b> the weight of the node.<br/>
@@ -14,6 +15,7 @@ Represents a vertice in the graph.<br/>
 # EdgeData
 
 Represents a edge in the graph.<br/>
+
 <b>Src:</b> source node.<br/>
 <b>Dest:</b> destination node.<br/>
 <b>Tag:</b> contains an integer, helps with graph algorithms.<br/>
@@ -23,6 +25,7 @@ Represents a edge in the graph.<br/>
 # DWGraph_DS
 
 Represents the graph.<br/>
+
 <b>V:</b> an HashMap contains all the vertices of the graph.<br/>
 <b>Edges:</b> an HashMap contains all the edges of the graph.<br/>
 <b>modecount:</b> counts the changes in the graph.<br/>
@@ -41,6 +44,7 @@ Represents the graph.<br/>
 # DWGraph_Algo
 
 The class that contains the whole algorithms that can be used on a graph.<br/>
+
 <b>G:</b> the graph that the algorithms being used on.<br/>
 
 ## Methods:
@@ -56,6 +60,7 @@ The class that contains the whole algorithms that can be used on a graph.<br/>
 # GeoLocation
 
 Represents a location in 3D.<br/>
+
 <b>X:</b> x value.<br/>
 <b>Y:</b> y value.<br/>
 <b>Z:</b> z value.<br/>

@@ -25,6 +25,18 @@ Weight: the weight of the edge from source to destination.<br/>
 Represents the graph.<br/>
 V: an HashMap contains all the vertices of the graph.<br/>
 Edges: an HashMap contains all the edges of the graph.<br/>
+modecount: counts the changes in the graph.<br/>
+edgesize: the amount of edges.<br/>
+nodeisze: the amount of nodes.<br/>
+
+## Methods:
+getNode(int key): returns a node_data by key in the graph.<br/>
+getEdge(int src, int dest): returns a edge_data by src and dest.<br/>
+addNode(node_data n): add node to the graph.<br/>
+connect(int src, int dest, double w): connects a new edge from source to destination with weight w.<br/>
+getE(int node_id): returns a collection of all edges which node_id is their source.<br/>
+removeNode(int key): removes a now with specific key.<br/>
+removeEdge(int src, int dest): removes edge from source to destination if exists<br/>
 
 # DWGraph_Algo
 

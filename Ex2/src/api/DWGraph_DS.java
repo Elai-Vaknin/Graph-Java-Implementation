@@ -11,13 +11,13 @@ public class DWGraph_DS implements Serializable, directed_weighted_graph {
 
     private int nodesize;
     private int edgesize;
-    private int modesize;
-
+    private int modecount;
+	
     public DWGraph_DS() {
         this.nodesize = 0;
         this.edgesize = 0;
-        this.modesize = 0;
-
+        this.modecount = 0;
+		
         this.v = new HashMap<>();
         this.edges = new HashMap<>();
     }
@@ -37,6 +37,7 @@ public class DWGraph_DS implements Serializable, directed_weighted_graph {
             this.v.put(n.getKey(), n);
 
             this.nodesize++;
+			this.modecount++;
         }
     }
 
@@ -49,7 +50,8 @@ public class DWGraph_DS implements Serializable, directed_weighted_graph {
         String vec = makeVector(src, dest);
 
         edges.put(vec,e);
-
+	
+		this.modecount++;
         this.edgesize++;
     }
 
@@ -94,7 +96,8 @@ public class DWGraph_DS implements Serializable, directed_weighted_graph {
         }
 
         this.nodesize--;
-
+		this.modecount++;
+		
         return v.remove(key);
     }
 
@@ -105,7 +108,8 @@ public class DWGraph_DS implements Serializable, directed_weighted_graph {
             return null;
 
         this.edgesize--;
-
+		this.modecount++;
+		
         return this.edges.remove(vec);
     }
 
@@ -118,7 +122,7 @@ public class DWGraph_DS implements Serializable, directed_weighted_graph {
     }
 
     public int getMC() {
-        return this.modesize;
+        return this.modecount;
     }
 
     /*

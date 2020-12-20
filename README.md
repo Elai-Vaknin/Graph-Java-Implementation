@@ -5,7 +5,7 @@ This project represents the structure of a directed weighted graph, also contain
 # NodeData
 
 Represents a vertice in the graph.<br/>
-Key: specific key associated with this node.<br/>
+<b>Key</b>: specific key associated with this node.<br/>
 Tag: contains an integer, helps with graph algorithms.<br/>
 Weight: the weight of the node.<br/>
 Info: a string associated with the node, helps with graph algorithms.<br/>
